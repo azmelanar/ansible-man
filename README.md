@@ -1,5 +1,5 @@
-Audit
-=====
+Man
+===
 
 [![Build Status](https://api.travis-ci.org/azmelanar/ansible-man.png)](https://travis-ci.org/azmelanar/ansible-man) [![Ansible Galaxy](https://img.shields.io/badge/ansible--galaxy-man-blue.svg?style=flat)](https://galaxy.ansible.com/list#/roles/2551)
 
