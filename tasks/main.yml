@@ -1,0 +1,18 @@
+---
+# tasks file for man
+
+- name: include os-specific variables
+  include_vars: "{{ ansible_os_family }}.yml"
+  tags: [man]
+
+- name: install package for debian system
+  apt: name={{ item }} state=present
+  with_items: man_packages
+  when: ansible_os_family=='Debian'
+  tags: [man]
+
+- name: install package for rhel system
+  yum: name={{ item }} state=present
+  with_items: man_packages
+  when: ansible_os_family=='RedHat'
+  tags: [man]
