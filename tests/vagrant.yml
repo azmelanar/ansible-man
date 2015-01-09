@@ -1,5 +1,4 @@
 ---
-# test file for man
 - hosts: all
   remote_user: vagrant
   sudo: true
